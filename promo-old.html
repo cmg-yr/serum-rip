@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app="Offer" ng-controller="DataController">
+   <head>
+      <meta charset="utf-8"/>
+      <title>{{S2.name}}</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <![endif]-->
+      <link rel="stylesheet" type="text/css" href="css/upsell.css">
+      <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/magnific-popupcb83.css?1552419350">
+      <!--Maestro-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <link rel='stylesheet' href='https://bridge-middletier.xyz/dist/v1/bridge.min.css'>
+      <script id='bridge-controller' src='https://bridge-middletier.xyz/dist/v1/bridge.min.js' data-url='oiajsdwjay.herokuapp.com'></script>
+      <!--End of Maestro-->
+      <style>
+         /*#secure1{position:relative;left:-100px;}*/
+         @media only screen and (max-width: 600px) {
+         #secure1{position:relative;left:-100px;transform:scale(.5);}
+         }
+      </style>
+   </head>
+   <body>
+      <div class="up-top-bar">
+         <div class="container">
+            <p class="up-top-p1 show-desk show-tab">Special Offer Unlocked: <span>Boost Your Results & </span> Save Instantly </p>
+            <p class="up-top-p1 show-mob">Special Offer Unlocked</p>
+         </div>
+      </div>
+      <div class="up-sec1">
+         <div class="container">
+            <div class="wht-body">
+               <div class="up-logo-bar">
+                  <div class="logo-div">
+                     <img src="images/logo.png" class="logo" alt="img">
+                     <div class="clearall"></div>
+                     <p>Burn Fat for Energy! <strong>BHB Formula!</strong></p>
+                  </div>
+                  <img src="images/steps-2.png" class="up-steps" alt="img">
+                  <img src="images/sec1-seal.png" class="up-seals" alt="img">
+               </div>
+               <div class="up-box" id="upsell_button" style="cursor:pointer;">
+                  <img src="images/special-up.png" class="special-up" style='animation: AnimationName 2s cubic-bezier(0.43, 0.61, 1, 1) infinite;' alt="img">
+                  <div class="up-bx-lft">
+                     <img src="images/up-btl-1.png" class="up-btl-1" alt="img">
+                  </div>
+                  <div class="up-bx-rit">
+                     <img src="images/up-seal.png" class="up-seal" alt="img">
+                     <p class="up-p1">Limited Time Special Offer</p>
+                     <p class="up-p2">As a <span>Thank You</span> for your order, we would like to add an <span>Additional bottle</span> to your order, at a <span>Huge Discount!</span></p>
+                     <ul class="up-ul">
+                        <li>FLUSH HARMFUL WASTE</li>
+                        <li>LOSE BODY WEIGHT</li>
+                        <li>BOOST YOUR ENERGY</li>
+                     </ul>
+                     <div class="clearall"></div>
+                     <img src="images/up1-mob-img.png" class="up1-mob-img show-mob" alt="img">
+                     <div class="clearall"></div>
+                     <p class="up-p3">Add Your <span class="brwn-clr"><b>RISK-FREE TRIAL</b></span> Bottle<br> Just pay shipping of <span class="cut-rel">${{S2.pricing.product}} <img src="images/up-red-cut.png" alt="img"></span></p>
+                     <p class="up-p4">${{S2.pricing.shipping.noDiscount}}</p>
+                     <form id='UpsellForm'>
+                        <input type='hidden' name='nextPage' value='receipt.html'>
+                        <input type="hidden" name="productCode" value="upsell">
+                        <input type="image" value="Add to Order" class="pulse" src="images/up-btn.png" style="border:none;background-color:transparent;" id="">			            
+                        <h2>We Care About Your Privacy<br><br>
+                           <img src="images/secure1.png.pagespeed.ce.GapvwTpcmC.png" id="secure1">
+                        </h2>
+                        <div class="clearall"></div>
+                        <div class="by-submit-promo">
+                           <p>By submitting, you affirm to have read and agreed to our <a href="terms2.html" class="bridge-modal" style="color: #0000FF;">Terms and Conditions</a>. After your {{data.rebill2.trialLength.total}} day trial period of {{S2.name}} has expired,
+                              <br class="show-desk">you will be enrolled in our membership program for ${{S2.pricing.product}}. You can cancel anytime by calling {{data.phoneS2}}.
+                           </p>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <br><br>
+               <a href="receipt.html">
+                  <p class="no-p1" style="padding-top: 30px;"><img src="images/up-crs.png"> NO Thanks, I'm Not Interested</p>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!--/*=====FOOTER======*/-->
+      <footer>
+         <div class="container">
+         <p><a href="terms2.html" class="bridge-modal">[ Terms and Conditions] </a> <a href="privacy.html" class="bridge-modal">[ Privacy & Policy ]</a> <a href="contact.html" class="bridge-modal"> [ Contact Us ]</a></p>
+         <p>REPRESENTATIONS REGARDING THE EFFICACY AND SAFETY OF {{S2.name}} HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG ADMINISTRATION. THE FDA ONLY EVALUATES FOODS AND DRUGS, NOT SUPPLEMENTS LIKE THESE PRODUCTS. 
+            <br class="show-desk">THESE PRODUCTS ARE NOT INTENDED TO DIAGNOSE, PREVENT, TREAT, OR CURE ANY DISEASE. <a href="forsk-study1.pdf" class="bridge-modal" style="color: #0000FF;">CLICK HERE </a> OR <a href="forsk-study2.pdf" class="bridge-modal" style="color: #0000FF;">CLICK HERE</a> TO FIND EVIDENCE OF A TEST, ANALYSIS, RESEARCH, OR STUDY DESCRIBING THE BENEFITS, PERFORMANCE OR EFFICACY OF BASED ON THE EXPERTISE OF RELEVANT PROFESSIONALS.
+         </p>
+         <p>Copyright &copy;2019 {{S2.name}}</p>
+      </footer>
+      <script src="js/jquery/3.3.1/jquery.min.js"></script>
+
+
+      
+      <script type="text/javascript">
+         $('.up-box').click(function(e) {
+             if($(e.target).is('.bridge-modal')){
+                e.preventDefault();
+                return;
+            }
+           $("#UpsellForm").submit();
+         });
+      </script>
+      <!--Data Controller-->
+      <script src="js/DataController.js"></script>
+   </body>
+</html>

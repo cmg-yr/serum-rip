@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html ng-app="Offer" ng-controller="DataController">
+   <head>
+      <meta charset="utf-8"/>
+      <title>{{S2.name}}</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <![endif]-->
+      <link rel="stylesheet" type="text/css" href="assets/css/upsell.css">
+      <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="assets/css/magnific-popupcb83.css?1552419350">
+      <!--Maestro-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-animate.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+    <link rel='stylesheet' href='https://bridge-middletier.xyz/dist/v1/bridge.min.css'> 
+    <script id='bridge-controller' src='https://bridge-middletier.xyz/dist/v1/bridge.min.js' data-url='oiajsdwjay.herokuapp.com'></script>
+    <script src='https://bridge-middletier.xyz/dist/modules/clicks.min.js'></script>
+      <!--End of Maestro-->
+      <style>
+         /*#secure1{position:relative;left:-100px;}*/
+         @media only screen and (max-width: 600px) {
+         #secure1{position:relative;left:-100px;transform:scale(.5);}
+         }
+      </style>
+   </head>
+   <body>
+      <div class="up-top-bar">
+         <div class="container">
+            <p class="up-top-p1 show-desk show-tab">Special Offer Unlocked: <span>Boost Your Results & </span> Save Instantly </p>
+            <p class="up-top-p1 show-mob">Special Offer Unlocked</p>
+         </div>
+      </div>
+      <div class="up-sec1">
+         <div class="container">
+            <div class="wht-body">
+               <div class="up-logo-bar">
+                  <div class="logo-div">
+                     <img src="assets/images/promo/logo.png" class="logo" alt="img">
+                     <div class="clearall"></div>
+                     <p>Burn Fat for Energy! <strong>BHB Formula!</strong></p>
+                  </div>
+                  <img src="assets/images/promo/steps-2.png" class="up-steps" alt="img">
+                  <img src="assets/images/promo/sec1-seal.png" class="up-seals" alt="img">
+               </div>
+               <div class="up-box" id="upsell_button" style="cursor:pointer;">
+                  <img src="assets/images/promo/special-up.png" class="special-up" style='animation: AnimationName 2s cubic-bezier(0.43, 0.61, 1, 1) infinite;' alt="img">
+                  <div class="up-bx-lft">
+                     <img src="assets/images/promo/up-btl-1.png" class="up-btl-1" alt="img">
+                  </div>
+                  <div class="up-bx-rit">
+                     <img src="assets/images/promo/up-seal.png" class="up-seal" alt="img">
+                     <p class="up-p1">Limited Time Special Offer</p>
+                     <p class="up-p2">As a <span>Thank You</span> for your order, we would like to add an <span>Additional bottle</span> to your order, at a <span>Huge Discount!</span></p>
+                     <ul class="up-ul">
+                        <li>FLUSH HARMFUL WASTE</li>
+                        <li>LOSE BODY WEIGHT</li>
+                        <li>BOOST YOUR ENERGY</li>
+                     </ul>
+                     <div class="clearall"></div>
+                     <img src="assets/images/promo/up1-mob-img.png" class="up1-mob-img show-mob" alt="img">
+                     <div class="clearall"></div>
+                     <p class="up-p3">Add Your <span class="brwn-clr"><b>RISK-FREE TRIAL</b></span> Bottle<br> Just pay shipping of <span class="cut-rel">${{S2.pricing.product}} <img src="assets/images/promo/up-red-cut.png" alt="img"></span></p>
+                     <p class="up-p4">${{S2.pricing.shipping.noDiscount}}</p>
+                     <form id='UpsellForm'>
+                        <input type='hidden' name='nextPage' value='receipt.html'>
+                        <input type="hidden" name="productCode" value="upsell">
+                        <!--<input type="image" value="Add to Order" class="kform_upsellBtn pulse" src="assets/images/promo/up-btn.png" style="border:none;background-color:transparent;" id="kformSubmit">			            -->
+                        <img value="Add to Order" class="kform_upsellBtn pulse" src="assets/images/promo/up-btn.png" style="border:none;background-color:transparent;">			            
+                        <h2>We Care About Your Privacy<br><br>
+                           <img src="assets/images/promo/secure1.png.pagespeed.ce.GapvwTpcmC.png" id="secure1">
+                        </h2>
+                        <div class="clearall"></div>
+                        <div class="by-submit-promo">
+                           <p>By submitting, you affirm to have read and agreed to our <a href="terms2.html" class="bridge-modal" style="color: #0000FF;">Terms and Conditions</a>. After your {{data.rebill2.trialLength.total}} day trial period of {{S2.name}} has expired,
+                              <br class="show-desk">you will be enrolled in our membership program for ${{S2.pricing.product}}. You can cancel anytime by calling {{data.phoneS2}}.
+                           </p>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <br><br>
+               <a href="receipt.html">
+                  <p class="no-p1" style="padding-top: 30px;"><img src="assets/images/promo/up-crs.png"> NO Thanks, I'm Not Interested</p>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!--/*=====FOOTER======*/-->
+      <footer>
+         <div class="container">
+         <p><a href="terms2.html" class="bridge-modal">[ Terms and Conditions] </a> <a href="privacy.html" class="bridge-modal">[ Privacy & Policy ]</a> <a href="contact.html" class="bridge-modal"> [ Contact Us ]</a></p>
+         <p>REPRESENTATIONS REGARDING THE EFFICACY AND SAFETY OF {{S1.name}} HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG ADMINISTRATION. THE FDA ONLY EVALUATES FOODS AND DRUGS, NOT SUPPLEMENTS LIKE THESE PRODUCTS. 
+            <br class="show-desk">THESE PRODUCTS ARE NOT INTENDED TO DIAGNOSE, PREVENT, TREAT, OR CURE ANY DISEASE. <a href="garc-study.pdf" class="bridge-modal" style="color: #0000FF;">CLICK HERE </a> OR <a href="garc-study2.pdf" class="bridge-modal" style="color: #0000FF;">CLICK HERE</a> TO FIND EVIDENCE OF A TEST, ANALYSIS, RESEARCH, OR STUDY DESCRIBING THE BENEFITS, PERFORMANCE OR EFFICACY OF BASED ON THE EXPERTISE OF RELEVANT PROFESSIONALS.
+         </p>
+         <p>Copyright &copy;2019 {{S1.name}}</p>
+      </footer>
+      <script src="js/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/jquery.magnific-popup.min.js" integrity="sha256-P93G0oq6PBPWTP1IR8Mz/0jHHUpaWL0aBJTKauisG7Q=" crossorigin="anonymous"></script>
+      <!--<script>eval(mod_pagespeed_FHr38ay35g);</script>-->
+      <script src='js/songbird.js'></script>
+      <script src='js/jquery/2.1.1/jquery.min.js'></script>
+      <!--<script type="text/javascript">$(document).ready(function($){$('.fb_footer').magnificPopup({type:'ajax',midClick:true,closeBtnInside:true,alignTop:true});});</script>
+         <link type='text/css' href='resources/css/kprofile.css.pagespeed.ce.dgtzFAEYZh.css' rel='stylesheet'/>
+         <link type='text/css' href='resources/css/kform.css.pagespeed.ce.-G4eL88UBI.css' rel='stylesheet'/>
+         <link type='text/css' href='resources/css/kcart.css.pagespeed.ce.KbjoS4XxjC.css' rel='stylesheet'/>
+         <script src="resources/js/kvalidator.js%2bklander.js.pagespeed.jc.wLVFRuhgVk.js"></script><script>eval(mod_pagespeed_eapzlICxPZ);</script>
+         <script>eval(mod_pagespeed_iwioljNzuN);</script>
+         <script src="resources/js/kcart.js%2bsignature%2c_signature_pad.js.pagespeed.jc.WnYoibtkGv.js"></script><script>eval(mod_pagespeed_Dzr_7ReTNo);</script>
+         
+         <script type='text/javascript'>window.addEventListener('load',function(){kform=new klander;kform.disableBack=true;kform.requirePayInfo=false;kform.autoImportLead=false;kform.config={"isWordpress":false,"resourceDir":"resources\/","baseDir":null,"mobileRedirectUrl":null,"desktopRedirectUrl":null,"continents":{"US":"NA"},"countries":{"US":"United States"},"coupons":{"2OFF":{"couponDiscountPrice":"2.00","couponDiscountPerc":null,"applyTo":"SHIPPING","isRecurring":0,"recurringDiscountPrice":null,"recurringDiscountPerc":null,"maxCycles":null,"campaignProductId":1697,"couponMax":1},"2OFF2":{"couponDiscountPrice":"2.00","couponDiscountPerc":null,"applyTo":"SHIPPING","isRecurring":0,"recurringDiscountPrice":null,"recurringDiscountPerc":null,"maxCycles":null,"campaignProductId":1698,"couponMax":1}},"currencySymbol":"$","insureShipPrice":null,"landerType":"SINGLE","offers":{"1697":{"productId":1697,"name":"JR Keto Shred","description":"JR Keto Shred 60 Capsules","imagePath":"\/\/images.konnektive.com\/unavailable.png","imageId":null,"price":"0.00","shipPrice":"4.95","category":"JR_Ecomm"}},"upsells":{"1698":{"productId":1698,"name":"JR Mango Cleanse","description":"JR African Mango Cleanse 60 Capsules","imagePath":"\/\/images.konnektive.com\/unavailable.png","imageId":null,"price":"0.00","shipPrice":"{{S2.pricing.noDiscount}}","category":"JR_Ecomm"},"1699":{"productId":1699,"name":"JR Keto Test Strips","description":"JR Keto Test 100 Strips","imagePath":"\/\/images.konnektive.com\/unavailable.png","imageId":null,"price":"19.72","shipPrice":"0.00","category":"JR_Ecomm"}},"products":[],"shipProfiles":[],"states":{"US":{"AL":"Alabama","AK":"Alaska","AZ":"Arizona","AR":"Arkansas","CA":"California","CO":"Colorado","CT":"Connecticut","DE":"Delaware","DC":"District of Columbia","FL":"Florida","GA":"Georgia","HI":"Hawaii","ID":"Idaho","IL":"Illinois","IN":"Indiana","IA":"Iowa","KS":"Kansas","KY":"Kentucky","LA":"Louisiana","ME":"Maine","MD":"Maryland","MA":"Massachusetts","MI":"Michigan","MN":"Minnesota","MS":"Mississippi","MO":"Missouri","MT":"Montana","NE":"Nebraska","NV":"Nevada","NH":"New Hampshire","NJ":"New Jersey","NM":"New Mexico","NY":"New York","NC":"North Carolina","ND":"North Dakota","OH":"Ohio","OK":"Oklahoma","OR":"Oregon","PA":"Pennsylvania","RI":"Rhode Island","SC":"South Carolina","SD":"South Dakota","TN":"Tennessee","TX":"Texas","UT":"Utah","VT":"Vermont","VA":"Virginia","WA":"Washington","WV":"West Virginia","WI":"Wisconsin","WY":"Wyoming","AS":"American Samoa","FM":"Federated States of Micronesia","GU":"Guam","MP":"Northern Mariana Islands","PR":"Puerto Rico","MH":"Republic of Marshall Islands","VI":"Virgin Islands of the U.S.","AE":"Armed Forces Middle East","AA":"Armed Forces Americas","AP":"Armed Forces Pacific"}},"taxes":null,"termsOfService":null,"webPages":{"checkoutPage":{"disableBack":1,"url":"https:\/\/www.stayingfitdiet.com\/ot\/checkout.html","autoImportLead":1,"productId":1697,"requireSig":0,"sigType":0,"cardinalAuth":0},"leadPage":{"disableBack":1,"url":"https:\/\/www.stayingfitdiet.com\/ot\/index.html","autoImportLead":1,"productId":null,"requireSig":0,"sigType":0,"cardinalAuth":0},"thankyouPage":{"disableBack":1,"url":"https:\/\/www.stayingfitdiet.com\/ot\/thankyou.html","createAccountDialog":0,"reorderUrl":null,"allowReorder":0},"upsellPage1":{"disableBack":1,"url":"https:\/\/www.stayingfitdiet.com\/ot\/mangocleanse.html","createAccountDialog":0,"requirePayInfo":0,"productId":1698,"replaceProductId":null}},"authString":"d3274e11b3f8980b44b92d97df75a8cd","autoUpdate_allowedIps":["80.248.30.132"],"campaignId":71,"prepaidRedirectUrl":"https:\/\/www.stayingfitdiet.com\/otp\/checkout.html","shipOptions":[],"googleTrackingId":null,"enableFraudPlugin":0,"autoTax":0,"taxServiceId":null,"companyName":"srm_distribution"};kform.defaultProduct=null;kform.isShoppingCart=false;kform.displayPixels=true;kform.requireSig=false;kform.reorderURL='';kform.redirectsTo='thankyou.html';kform.resourceDir='resources/index.html';kform.upsellId=1698;kform.orderItems={};kform.customer=null;kform.replaceProductId=null;kform.checkoutPageUrl='checkout.html';kform.signInEmail='';kform.construct("upsellPage1");});</script>
+         -->
+      <script type="text/javascript">
+         $(document).ready(function() {
+             $(".limitedOfferImg").click(function() {
+                 $("form").submit();
+             });
+             $(".completeBtn").click(function() {
+                 $("form").submit();
+             });
+         });
+      </script>
+      <script type="text/javascript">
+         $('.up-box').click(function() {
+           $("#UpsellForm").submit();
+         });
+      </script>
+      <!--Data Controller-->
+      <script src="js/DataController.js"></script>
+   </body>
+</html>

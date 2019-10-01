@@ -1,0 +1,26 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> 
+<div id="content" style="padding:15px;" ng-app="Offer" ng-controller="DataController">
+    <h1 style="margin-top: 0;">Contact Us</h1>
+    <p>Customer Service Hours of Operation:</p>
+    <p> 
+        <strong>Phone Support:</strong>
+        <br> 24 hours a day, 7 days a week
+        <br> Phone: <span ng-bind="data.phone"></span> 
+    </p>
+    <p> 
+        <strong>Email Support:</strong>
+        <br> Please Allow 24 Hours For Reply.
+        <br> 
+        <a data-rel="external" ng-href="{{ 'mailto:' + data.email }}" title="Email Support" ng-bind="data.email"></a>
+    </p>
+    <p><strong>Return Address:</strong><br>
+        <span ng-bind="S1.name"></span>
+        <br>
+        <!--<span ng-bind="data.returnAddress.part1"></span>, -->
+        <!--<br>-->
+        <span ng-bind="data.returnAddress.part1"></span>
+    </p>
+</div>
+
+<!-- Controllers -->
+<script src="js/DataController.js"></script>
